@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --font: "Sora", serif;
+    --color: #2e80ce;
+    --heading-color: #10375c;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--font);
+}
+
+/*===== Common =====*/
+a {
+    text-decoration: none;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
+.line-clamp.line-4 {
+    --line-clamp: 4;
+}
+
+.break-all {
+    word-break: break-all;
+}
